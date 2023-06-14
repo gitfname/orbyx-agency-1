@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
+}

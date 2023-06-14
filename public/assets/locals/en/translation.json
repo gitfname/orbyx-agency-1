@@ -1,0 +1,42 @@
+
+{
+    "header": {
+        "home": "Home",
+        "company": {
+            "text": "Company",
+            "sub-links": {
+                "about-us": "About Us",
+                "our-team": "Our Team",
+                "services": "Services"
+            }
+        },
+        "work": {
+            "text": "Work",
+            "sub-links": {
+                "project": "Project",
+                "project-details": "Project Details",
+                "hot-projects": "Best Projects"
+            }
+        },
+        "blog": {
+            "text": "Blog",
+            "sub-links": {
+                "blog": "Blog",
+                "latest-articles": "Latest Articles",
+                "recommended-for-you": "Recommended For You",
+                "best-of-day": "Today's Top Articles",
+                "best-of-week": "This Week Top Articles"
+            }
+        },
+        "contact": "Contact Us",
+        "cta-text": "Get a Qoutes"
+    },
+    "home": {
+        "hero": {
+            "title": "Welcome to Deck",
+            "subtitle": "Quality in Every Square",
+            "description": "Nullam laoreet, dui tristique suscipit posuere, est mi commodo dolor, quis porttitor lorem enim non dui. Fusce egestas consequat tellus. Aliquam in arcu quis neque convallis egestas ut id elit.",
+            "cta-text": "Get a Qoute"
+        }
+    }
+}
