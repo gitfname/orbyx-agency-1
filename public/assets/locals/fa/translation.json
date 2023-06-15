@@ -169,6 +169,99 @@
                     "read-more-text": "مشاهده بیشتر"
                 }
             ]
+        },
+        "our-team": {
+            "title": "تیم ما",
+            "subtitle": "مراقبت از بیمار مهم است که بیمار دنبالش باشد، اما در چنین زمانی اتفاق می افتد که کار و درد زیاد است. برای رسیدن به کوچکترین جزئیات، هیچ کس نباید هیچ نوع کاری را تمرین کند، مگر اینکه از آن بهره ای ببرد. درد Duis یا Irure در توبیخ",
+            "items": [
+                {
+                    "id": "0",
+                    "visible": true,
+                    "img": "/public/assets/images/our-team-member-1.jpg",
+                    "name": "احمد کاظمی",
+                    "role": "برنامه نویس فرانت اند",
+                    "social-links": [
+                        {
+                            "visible": true,
+                            "id": "0",
+                            "img": "/assets/icons/icons8-facebook-50.png",
+                            "link": "https://facebook.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "1",
+                            "img": "/assets/icons/icons8-youtube-50.png",
+                            "link": "https://youtube.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "2",
+                            "img": "/assets/icons/icons8-telegram-50.png",
+                            "link": "https://instagram.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "visible": true,
+                    "img": "/assets/images/our-team-member-2.jpg",
+                    "name": "مریم هوشمند",
+                    "role": "برنامه نویس بک اند",
+                    "social-links": [
+                        {
+                            "visible": true,
+                            "id": "0",
+                            "img": "/assets/icons/icons8-facebook-50.png",
+                            "link": "https://facebook.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "1",
+                            "img": "/assets/icons/icons8-youtube-50.png",
+                            "link": "https://youtube.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "2",
+                            "img": "/assets/icons/icons8-instagram-50.png",
+                            "link": "https://instagram.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "visible": true,
+                    "img": "/assets/images/our-team-member-3.jpg",
+                    "name": "علی پیری",
+                    "role": "UI/UX دیزاینر",
+                    "social-links": [
+                        {
+                            "visible": true,
+                            "id": "0",
+                            "img": "/assets/icons/icons8-facebook-50.png",
+                            "link": "https://facebook.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "1",
+                            "img": "/assets/icons/icons8-youtube-50.png",
+                            "link": "https://youtube.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "2",
+                            "img": "/assets/icons/icons8-instagram-50.png",
+                            "link": "https://instagram.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "3",
+                            "img": "/assets/icons/icons8-telegram-50.png",
+                            "link": "https://telegram.com"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }

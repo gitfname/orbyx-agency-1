@@ -21,7 +21,7 @@ function WhyChooseUs({ className }: Props) {
             className="w-full grid grid-cols-3 gap-7 mt-12"
         >
             {
-                t("home.why-choose-us.items")?.map(item => (
+                t("home.why-choose-us.items")?.map((item: any) => (
                     <div key={item.id} className="flex flex-col gap-y-3">
                         <p className="text-2xl text-slate-800/80 font-medium tracking-wide">{item.title}</p>
                         <p className="text-slate-600 font-normal text-base">

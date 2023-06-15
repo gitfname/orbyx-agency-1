@@ -169,6 +169,99 @@
                     "read-more-text": "Read more"
                 }
             ]
+        },
+        "our-team": {
+            "title": "Team",
+            "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cumque facere obcaecati molestiae vitae quisquam modi deleniti perspiciatis cum. Harum fugit repellat corrupti exercitationem officiis aliquam aut quasi laboriosam sequi?",
+            "items": [
+                {
+                    "id": "0",
+                    "visible": true,
+                    "img": "/public/assets/images/our-team-member-1.jpg",
+                    "name": "Jhony Abraham",
+                    "role": "FrontEnd Developer",
+                    "social-links": [
+                        {
+                            "visible": true,
+                            "id": "0",
+                            "img": "/assets/icons/icons8-facebook-50.png",
+                            "link": "https://facebook.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "1",
+                            "img": "/assets/icons/icons8-youtube-50.png",
+                            "link": "https://youtube.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "2",
+                            "img": "/assets/icons/icons8-telegram-50.png",
+                            "link": "https://instagram.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "visible": true,
+                    "img": "/assets/images/our-team-member-2.jpg",
+                    "name": "Cadita Zean",
+                    "role": "BackEnd Developer",
+                    "social-links": [
+                        {
+                            "visible": true,
+                            "id": "0",
+                            "img": "/assets/icons/icons8-facebook-50.png",
+                            "link": "https://facebook.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "1",
+                            "img": "/assets/icons/icons8-youtube-50.png",
+                            "link": "https://youtube.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "2",
+                            "img": "/assets/icons/icons8-instagram-50.png",
+                            "link": "https://instagram.com"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "visible": true,
+                    "img": "/assets/images/our-team-member-3.jpg",
+                    "name": "Danial Rules",
+                    "role": "UI/UX Designer",
+                    "social-links": [
+                        {
+                            "visible": true,
+                            "id": "0",
+                            "img": "/assets/icons/icons8-facebook-50.png",
+                            "link": "https://facebook.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "1",
+                            "img": "/assets/icons/icons8-youtube-50.png",
+                            "link": "https://youtube.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "2",
+                            "img": "/assets/icons/icons8-instagram-50.png",
+                            "link": "https://instagram.com"
+                        },
+                        {
+                            "visible": true,
+                            "id": "3",
+                            "img": "/assets/icons/icons8-telegram-50.png",
+                            "link": "https://telegram.com"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
