@@ -1,3 +1,4 @@
+import ReadMoreButton_1 from "./ReadMoreButton_1"
 
 interface props {
     img: string,
@@ -39,14 +40,7 @@ function ServiecCard_1({ img="", title, description, readMoreText, showReadMore=
             {
                 showReadMore === true
                 ?
-                    <button
-                        className="border-none w-max focus:outline-foreground bg-transparent text-slate-800 text-lg
-                        mt-3 font-medium hover:text-slate-700/90 transition-colors duration-200"
-                    >
-                        {
-                            readMoreText ? readMoreText : "Read more"
-                        }
-                    </button>
+                    <ReadMoreButton_1 text={readMoreText ? readMoreText : "Read more"} />
                 :
                     false
             }

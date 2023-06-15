@@ -145,6 +145,30 @@
                 "desc": "120x70 square meter. Expory model High quality",
                 "link": ""
             }
-        ]
+        ],
+        "why-choose-us": {
+            "title": "Why Choose Us?",
+            "subtitle": "Maecenas eros nisi, faucibus et urna ac, finibus dapibus velit. Aenean posuere mattis maximus. Nullam enim nulla, molestie et hendrerit sed, fringilla quis eros. Duis mi risus, viverra commodo semper finibus, sagittis ut dolor. Integer non leo in sapien finibus scelerisque at eu arcu.",
+            "items": [
+                {
+                    "id": "0",
+                    "title": "Free estimate",
+                    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste accusantium officiis, vel laborum accusamus, incidunt sed culpa magni ad dicta voluptates sunt obcaecati soluta.",
+                    "read-more-text": "Read more"
+                },
+                {
+                    "id": "1",
+                    "title": "Fast installation",
+                    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste accusantium officiis, vel laborum accusamus, incidunt sed culpa magni ad dicta voluptates sunt obcaecati soluta.",
+                    "read-more-text": "Read more"
+                },
+                {
+                    "id": "2",
+                    "title": "Lifetime warranty",
+                    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste accusantium officiis, vel laborum accusamus, incidunt sed culpa magni ad dicta voluptates sunt obcaecati soluta.",
+                    "read-more-text": "Read more"
+                }
+            ]
+        }
     }
 }

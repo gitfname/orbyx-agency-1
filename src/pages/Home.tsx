@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"
 import StatsSection_1 from "../components/StatsSection_1"
 import ProjectCard_1 from "../components/ProjectCard_1"
 import ProjectsSection from "../components/ProjectsSection"
+import WhyChooseUs from "../components/WhyChooseUs"
 
 function Home() {
   const [t] = useTranslation()
@@ -16,6 +17,7 @@ function Home() {
       <Services_1 className="mt-14" />
       <StatsSection_1 className="mt-14 px-4 lg:px-10" stats={t("home.stats")} />
       <ProjectsSection projects={t("home.projects")} className="mt-20 px-4 lg:px-10" />
+      <WhyChooseUs className="mt-28 px-4 lg:px-10" />
     </div>
   )
 }
