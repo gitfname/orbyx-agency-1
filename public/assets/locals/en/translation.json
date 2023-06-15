@@ -262,6 +262,10 @@
                     ]
                 }
             ]
+        },
+        "latest-news": {
+            "title": "Latest News & Updates",
+            "read-more-text": "Read more"
         }
     }
 }

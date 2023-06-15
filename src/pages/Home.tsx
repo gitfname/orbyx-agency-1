@@ -5,12 +5,12 @@ import { useTranslation } from "react-i18next"
 import StatsSection_1 from "../components/StatsSection_1"
 import ProjectsSection from "../components/ProjectsSection"
 import WhyChooseUs from "../components/WhyChooseUs"
-import TeamMemberCard_1 from "../components/TeamMemberCard_1"
-import ReadMoreButton_1 from "../components/ReadMoreButton_1"
 import OurTeamSection from "../components/OurTeamSection"
+import LatestNewsSection from "../components/LatestNewsSection"
 
 function Home() {
   const [t, i18n] = useTranslation()
+
 
   return (
     <div className="pb-20">
@@ -27,6 +27,12 @@ function Home() {
         title={t("home.our-team.title")}
         subtitle={t("home.our-team.subtitle")}
       />
+      <LatestNewsSection
+        className="mt-28 w-full px-4 lg:px-10"
+        title={t("home.latest-news.title")}
+        readMoreText={t("home.latest-news.read-more-text")}
+      />
+
     </div>
   )
 }
