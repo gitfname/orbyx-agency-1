@@ -96,6 +96,55 @@
                     "read-more-text": "مشاهده بیشتر"
                 }
             ]
-        }
+        },
+        "stats": [
+            {
+                "title": "سال تجربه",
+                "speed": 100,
+                "start": 1,
+                "end": 19
+            },
+            {
+                "title": "پروژه های تمام شده",
+                "speed": 35,
+                "start": 20,
+                "end": 150
+            },
+            {
+                "title": "تیم حرفه ای",
+                "speed": 75,
+                "start": 1,
+                "end": 38
+            },
+            {
+                "title": "مشتریان راضی",
+                "speed": 35,
+                "start": 420,
+                "end": 689
+            }
+        ],
+        "projects": [
+            {
+                "id": "0",
+                "img": "/assets/images/prj-1-img.jpg",
+                "title": "عنوان پروژه 1",
+                "desc": "توضیحات تستی برای پروژه 1 در اینجا هست",
+                "link": ""
+            },
+            {
+                "id": "1",
+                "img": "/assets/images/prj-2-img.jpg",
+                "title": "عنوان پروژه 2",
+                "desc": "توضیحات تستی برای پروژه 2 در اینجا هست",
+                "link": ""
+            },
+            {
+                "id": "2",
+                "img": "/assets/images/prj-3-img.jpg",
+                "title": "عنوان پروژه 3",
+                "desc": "توضیحات تستی برای پروژه 3 در اینجا هست",
+                "link": ""
+            }
+        ]
     }
 }

@@ -21,6 +21,7 @@ function AnimatedStatCount({ start=0, end=100, speed=100, className="", counterC
             const observer = new IntersectionObserver((entries) => {
 
                 if(entries[0].isIntersecting) {
+                    observer.disconnect()
                     id = setInterval(() => {
                         setCount(count => count + 1)
                     }, speed);

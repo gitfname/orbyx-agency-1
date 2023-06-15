@@ -96,6 +96,55 @@
                     "read-more-text": "Read more"
                 }
             ]
-        }
+        },
+        "stats": [
+            {
+                "title": "Years of Experience",
+                "speed": 100,
+                "start": 1,
+                "end": 19
+            },
+            {
+                "title": "Projects Complete",
+                "speed": 35,
+                "start": 20,
+                "end": 150
+            },
+            {
+                "title": "Professional Team",
+                "speed": 75,
+                "start": 1,
+                "end": 38
+            },
+            {
+                "title": "Satisfied Client",
+                "speed": 35,
+                "start": 420,
+                "end": 689
+            }
+        ],
+        "projects": [
+            {
+                "id": "0",
+                "img": "/assets/images/prj-1-img.jpg",
+                "title": "Garage flooring",
+                "desc": "120x70 square meter. Expory model High quality",
+                "link": ""
+            },
+            {
+                "id": "1",
+                "img": "/assets/images/prj-2-img.jpg",
+                "title": "Floor coating",
+                "desc": "120x70 square meter. Expory model High quality",
+                "link": ""
+            },
+            {
+                "id": "2",
+                "img": "/assets/images/prj-3-img.jpg",
+                "title": "Floor tilling",
+                "desc": "120x70 square meter. Expory model High quality",
+                "link": ""
+            }
+        ]
     }
 }
