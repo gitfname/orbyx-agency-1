@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import ApplicationLayout from "./layouts/ApplicationLayout"
 import { useEffect } from "react"
 import { useTranslation } from "react-i18next"
+import { ChakraProvider } from "@chakra-ui/react"
 
 function App() {
   const [t, i18n] = useTranslation()
@@ -31,12 +32,14 @@ function App() {
 
 
   return (
-    <ApplicationLayout>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/blog" element={<p>hello world from blog</p>} />
-      </Routes>
-    </ApplicationLayout>
+    <ChakraProvider>
+      <ApplicationLayout>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/blog" element={<p>hello world from blog</p>} />
+        </Routes>
+      </ApplicationLayout>
+    </ChakraProvider>
   )
 }
 

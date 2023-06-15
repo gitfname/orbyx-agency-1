@@ -37,6 +37,65 @@
             "subtitle": "Quality in Every Square",
             "description": "Nullam laoreet, dui tristique suscipit posuere, est mi commodo dolor, quis porttitor lorem enim non dui. Fusce egestas consequat tellus. Aliquam in arcu quis neque convallis egestas ut id elit.",
             "cta-text": "Get a Qoute"
+        },
+        "about-us": {
+            "title": "About Us",
+            "subtitle": "Vivamus pharetra quam lorem, eget eleifend massa gravida tempor. Aliquam non pellentesque enim. Quisque et dictum ante. Nam eleifend orci nec nibh condimentum, at tempor libero egestas."
+        },
+        "awards": {
+            "title": "Awards",
+            "items": [
+                {
+                    "name": "Award-1",
+                    "date": "2017",
+                    "description": "description text for our award-1 that we got in 2017"
+                },
+                {
+                    "name": "Award-2",
+                    "date": "2019",
+                    "description": "description text for our award-2 that we got in 2019"
+                },
+                {
+                    "name": "Award-3",
+                    "date": "2020",
+                    "description": "description text for our award-3 that we got in 2020"
+                },
+                {
+                    "name": "Award-4",
+                    "date": "2023",
+                    "description": "description text for our award-4 that we got in 2023"
+                }
+            ]
+        },
+        "services": {
+            "title": "Services",
+            "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cumque facere obcaecati molestiae vitae quisquam modi deleniti perspiciatis cum. Harum fugit repellat corrupti exercitationem officiis aliquam aut quasi laboriosam sequi?",
+            "items": [
+                {
+                    "img": "/assets/images/abount-img-1.jpg",
+                    "title": "Garage flooring",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                    "read-more-text": "Read more"
+                },
+                {
+                    "img": "/assets/images/abount-img-1.jpg",
+                    "title": "Floor coating",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                    "read-more-text": "Read more"
+                },
+                {
+                    "img": "/assets/images/abount-img-1.jpg",
+                    "title": "Basement flooring",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                    "read-more-text": "Read more"
+                },
+                {
+                    "img": "/assets/images/abount-img-1.jpg",
+                    "title": "Bathroom flooring",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+                    "read-more-text": "Read more"
+                }
+            ]
         }
     }
 }

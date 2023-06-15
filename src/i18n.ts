@@ -12,6 +12,7 @@ i18n
 .use(initReactI18next)
 .init({
     fallbackLng: "fa",
+    returnObjects: true,
     interpolation: {
         escapeValue: false
     },
