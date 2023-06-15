@@ -17,12 +17,14 @@ function ServiecCard_1({ img="", title, description, readMoreText, showReadMore=
             {
                 typeof img === "string"
                 ?
-                    <img
-                        loading="lazy"
-                        alt=""
-                        src={img}
-                        className="w-16 h-16 object-center object-cover"
-                    />
+                    <div className="p-2 rounded-sm bg-slate-800 w-max">
+                        <img
+                            loading="lazy"
+                            alt=""
+                            src={img}
+                            className="w-9 h-9 object-center object-cover"
+                        />
+                    </div>
                 :
                     img
             }

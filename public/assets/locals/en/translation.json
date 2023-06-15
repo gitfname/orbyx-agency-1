@@ -72,25 +72,25 @@
             "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cumque facere obcaecati molestiae vitae quisquam modi deleniti perspiciatis cum. Harum fugit repellat corrupti exercitationem officiis aliquam aut quasi laboriosam sequi?",
             "items": [
                 {
-                    "img": "/assets/images/abount-img-1.jpg",
+                    "img": "/assets/images/service-img-1.png",
                     "title": "Garage flooring",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
                     "read-more-text": "Read more"
                 },
                 {
-                    "img": "/assets/images/abount-img-1.jpg",
+                    "img": "/assets/images/service-img-2.png",
                     "title": "Floor coating",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
                     "read-more-text": "Read more"
                 },
                 {
-                    "img": "/assets/images/abount-img-1.jpg",
+                    "img": "/assets/images/service-img-3.png",
                     "title": "Basement flooring",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
                     "read-more-text": "Read more"
                 },
                 {
-                    "img": "/assets/images/abount-img-1.jpg",
+                    "img": "/assets/images/service-img-4.png",
                     "title": "Bathroom flooring",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
                     "read-more-text": "Read more"
