@@ -124,6 +124,7 @@
             }
         ],
         "projects": {
+            "read-more-text": "Read more",
             "title": "Projects",
             "items": [
                 {
@@ -273,6 +274,19 @@
         "text-1": "you'll be Floored by ore selection and prices!",
         "text-2": "Get special offer up to 50% on June",
         "call-us": "Call us +123-456-789"
+    },
+    "contact-us": {
+        "title": "Contact",
+        "sub-title": "Home - Contact",
+        "get-in-touch": "Get in Touch",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis sequi error, temporibus earum enim in blanditiis incidunt perspiciatis harum. Voluptatum nesciunt, perferendis necessitatibus nulla minima deserunt odit debitis suscipit consequatur, quasi atque?",
+        "follow-us": "Follow us:",
+        "form": {
+            "name": "Name",
+            "email": "Email *",
+            "message": "Message *",
+            "submit-text": "Send a Message"
+        }
     },
     "footer": {
         "items": [

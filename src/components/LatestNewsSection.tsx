@@ -14,10 +14,8 @@ function LatestNewsSection({ className, readMoreText, title }: Props) {
 
     useEffect(
       () => {
-        setTimeout(() => {
-          latestNews()
-          .then(data => setNews(data))
-        }, 1000);
+        latestNews()
+        .then(data => setNews(data))
       },
       []
     )
@@ -29,7 +27,7 @@ function LatestNewsSection({ className, readMoreText, title }: Props) {
                 news.map(item => (
                 <ArticleCard_1
                     id={item.id}
-                    img={item.img}
+                    img={import.meta.env.BASE_URL+item.img}
                     title={item.title}
                     desc={item.desc}
                     pubDate={item.pubDate}

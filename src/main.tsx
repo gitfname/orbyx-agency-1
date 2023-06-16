@@ -2,12 +2,16 @@ import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom"
 // import App from './App.tsx'
-const App = lazy(() => {
-  return new Promise(resolve => {
+const sleep = (ms:number) => {
+  return new Promise(resovle => {
     setTimeout(() => {
-      resolve(import("./App.tsx"))
-    }, 8000);
+      resovle(1)
+    }, ms);
   })
+}
+const App = lazy(async () => {
+  await sleep(8000)
+  return import("./App.tsx")
 })
 import './index.css'
 

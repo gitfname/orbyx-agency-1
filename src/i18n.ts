@@ -17,10 +17,11 @@ i18n
         escapeValue: false
     },
     backend: {
-        loadPath: "/assets/locals/{{lng}}/{{ns}}.json"
+        loadPath: import.meta.env.BASE_URL+"/assets/locals/{{lng}}/{{ns}}.json"
     },
     detection: {
-        order: ['path', 'cookie', 'sessionStorage', 'localStorage'],
+        order: ['cookie', 'localStorage'],
+        caches: ['cookie', 'localStorage']
     }
 })
 

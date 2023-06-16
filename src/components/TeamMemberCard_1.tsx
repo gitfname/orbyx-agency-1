@@ -17,7 +17,7 @@ interface Props {
 function TeamMemberCard_1({ className="", id, img, name, role, socialLinks=[] }: Props) {
     
     return (
-        <div className={"w-full max-w-sm " + className}>
+        <div key={id} className={"w-full max-w-sm " + className}>
             <img
                 alt=""
                 src={img}
@@ -33,7 +33,7 @@ function TeamMemberCard_1({ className="", id, img, name, role, socialLinks=[] }:
                                 <img
                                     key={socialLink.id}
                                     alt=""
-                                    src={socialLink.img}
+                                    src={import.meta.env.BASE_URL+socialLink.img}
                                     className="w-6 h-6 transition-opacity duration-300 group-hover:opacity-70 object-center object-cover"
                                 />
                             </a>

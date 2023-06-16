@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import ProjectCard_1 from "./ProjectCard_1"
 
 interface Props {
@@ -7,6 +8,8 @@ interface Props {
 }
 
 function ProjectsSection({className, projects, title}: Props) {
+  const [t] = useTranslation()
+
   return (
     <div className={"w-full " + className}>
         <p className="text-4xl lg:text-5xl text-slate-800 font-medium">{title}</p>
@@ -16,10 +19,11 @@ function ProjectsSection({className, projects, title}: Props) {
             <ProjectCard_1
                 key={project.id}
                 id={project.id}
-                img={project.img}
+                img={import.meta.env.BASE_URL+project.img}
                 title={project.title}
                 desc={project.desc}
                 link={project.link}
+                cta_text={t("home.projects.read-more-text")}
             />
             ))
         }

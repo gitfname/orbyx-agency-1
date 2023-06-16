@@ -32,7 +32,7 @@ function OurTeamSection({ className, teamMembers=[], readMoreButtonText, subtitl
             teamMembers?.map((member: any) => (
                 <TeamMemberCard_1
                     id={member.id}
-                    img={member.img}
+                    img={import.meta.env.BASE_URL+member.img}
                     name={member.name}
                     role={member.role}
                     socialLinks={member["social-links"]}

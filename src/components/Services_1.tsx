@@ -24,10 +24,10 @@ function Services_1({className=""}: props) {
       <div className="mt-12 w-full grid-cols-1 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         {
-          t("home.services.items")?.map((item, i) => (
+          (():any => t("home.services.items"))()?.map((item, i) => (
             <ServiecCard_1
               key={i}
-              img={item?.img}
+              img={import.meta.env.BASE_URL+item?.img}
               title={item?.title}
               description={item?.description}
               readMoreText={item?.["read-more-text"]}

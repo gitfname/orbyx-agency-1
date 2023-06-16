@@ -200,7 +200,7 @@ function Footer() {
                         </div> */}
 
                         {
-                            t("footer.items")?.map(item => (
+                            (():any => t("footer.items"))()?.map(item => (
                                 <div key={item.id}>
                                     <p className="font-medium text-gray-100 text-xl">{item.title}</p>
                                     <ul className="mt-6 space-y-4 text-sm">

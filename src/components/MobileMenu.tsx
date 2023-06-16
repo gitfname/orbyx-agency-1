@@ -1,14 +1,30 @@
-import { useState } from "react"
-import { AiOutlineMenu, AiOutlineUser } from "react-icons/ai"
+import { useEffect, useState } from "react"
+import { AiOutlineMenu } from "react-icons/ai"
 import { Link } from "react-router-dom"
-import { useTransition } from "react"
 import { useTranslation } from "react-i18next"
 import ChangeLangButton from "./ChangeLangButton"
+import { menuItems } from "../utils/http"
+import { menuItemOptions } from "../utils/http/menuItems"
 
+const getLang = (lng) => {
+    const languages = ["en", "fa"]
+    return languages.find(v => v===lng) || "fa"
+}
 
 function MobileMenu() {
     const [isOpen, setIsOpen] = useState(false)
     const [t, i18n] = useTranslation()
+    const [items, setItems] = useState<menuItemOptions>()
+
+    useEffect(
+        () => {
+            menuItems({lng: getLang(i18n.language)})
+            .then(data => setItems(data))
+        },
+        [i18n.language]
+    )
+    console.log(items);
+    
 
     return (
         <>
@@ -42,7 +58,7 @@ function MobileMenu() {
                     
                     <div dir={i18n.dir(i18n.language)} className="flex flex-col gap-y-2 px-3 mt-5">
                         {
-                            t("mobile-menu.items")?.map(item => (
+                            items?.items?.map(item => (
                                 <Link
                                     key={item.id}
                                     to={item.link}
@@ -57,12 +73,6 @@ function MobileMenu() {
 
                     <div className="mt-auto flex items-center gap-x-2 justify-center mb-6 mx-auto w-max rounded-xl
                     border border-slate-700">
-                        {/* <AiOutlineUser className="w-5 h-5 fill-slate-700" />
-                        <p
-                            className="text-base text-slate-800 font-[iranyekan500]"
-                        >
-                            {t("mobile-menu.account-text")}
-                        </p> */}
                         <ChangeLangButton />
                     </div>
 

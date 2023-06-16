@@ -18,7 +18,7 @@ function AboutUs_1() {
 
             <img
                 alt=""
-                src="/assets/images/abount-img-1.jpg"
+                src={import.meta.env.BASE_URL+"/assets/images/abount-img-1.jpg"}
                 className="w-full h-auto object-center object-cover rounded-sm max-lg:hidden"
             />
 
@@ -30,10 +30,10 @@ function AboutUs_1() {
                 </p>
                 <p className="text-2xl font-normal text-slate-800 tracking-wide">{t("home.awards.title")}</p>
 
-                {/* <Accordion minW="42rem" maxW="42rem" allowMultiple defaultIndex={[0]}>
+                <Accordion className="max-lg:hidden" minW="42rem" maxW="42rem" allowMultiple defaultIndex={[0]}>
 
                     {
-                        t("home.awards.items")?.map((item, i) => (
+                        (():any => t("home.awards.items"))()?.map((item:any, i:number) => (
                             <AccordionItem key={i}>
                                 <AccordionButton _expanded={{color: "blackAlpha.900"}} color="blackAlpha.800" fontWeight="medium" letterSpacing="wide" textAlign={i18n.dir(i18n.language) === "ltr" ? "left" : "right"}>
                                     <Box flexGrow={1}>
@@ -53,7 +53,7 @@ function AboutUs_1() {
                     }
 
                     
-                </Accordion> */}
+                </Accordion>
 
 
             </div>

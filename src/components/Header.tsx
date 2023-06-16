@@ -3,6 +3,7 @@ import Logo from "./Logo"
 import { useTranslation } from "react-i18next"
 import MobileMenu from "./MobileMenu"
 import ChangeLangButton from "./ChangeLangButton"
+import { ApplicationRoutes } from "../routes"
 
 function Header() {
 
@@ -27,24 +28,27 @@ function Header() {
             <div  
               className="flex items-center gap-x-7 max-lg:hidden"
             >
-              <DesktopNavLink href="" text={t("header.home")}  />
+              <DesktopNavLink
+                href={ApplicationRoutes.pages.home}
+                text={t("header.home")}
+              />
 
               <DesktopNavLink
                 items={[
                   {
                     text: t("header.company.sub-links.about-us"),
-                    href: "company/about-us"
+                    href: ApplicationRoutes.pages.company["about-us"]
                   },
                   {
                     text: t("header.company.sub-links.our-team"),
-                    href: "company/our-team"
+                    href: ApplicationRoutes.pages.company["our-team"]
                   },
                   {
                     text: t("header.company.sub-links.services"),
-                    href: "company/services"
+                    href: ApplicationRoutes.pages.company.services
                   }
                 ]}
-                href="company"
+                href=""
                 text={t("header.company.text")}
               />
 
@@ -54,15 +58,15 @@ function Header() {
                 items={[
                   {
                     text: t("header.work.sub-links.project"),
-                    href: "project"
+                    href: ApplicationRoutes.pages.work.project
                   },
                   {
                     text: t("header.work.sub-links.project-details"),
-                    href: "project/project-details"
+                    href: ApplicationRoutes.pages.work["project-details"]
                   },
                   {
                     text: t('header.work.sub-links.hot-projects'),
-                    href: "project/hot-projects"
+                    href: ApplicationRoutes.pages.work["best-projects"]
                   }
                 ]}
               />
@@ -73,28 +77,31 @@ function Header() {
                 items={[
                   {
                     text: t("header.blog.sub-links.blog"),
-                    href: "blog"
+                    href: ApplicationRoutes.pages.blog.blog
                   },
                   {
                     text: t("header.blog.sub-links.latest-articles"),
-                    href: "blog/latest-articles"
+                    href: ApplicationRoutes.pages.blog["latest-articles"]
                   },
                   {
                     text: t("header.blog.sub-links.recommended-for-you"),
-                    href: "blog/recommended"
+                    href: ApplicationRoutes.pages.blog["recommended-for-you"]
                   },
                   {
                     text: t("header.blog.sub-links.best-of-day"),
-                    href: "blog/best-of-day"
+                    href: ApplicationRoutes.pages.blog["best-of-day"]
                   },
                   {
                     text: t("header.blog.sub-links.best-of-week"),
-                    href: "blog/best-of-week"
+                    href: ApplicationRoutes.pages.blog["best-of-week"]
                   },
                 ]}
               />
 
-              <DesktopNavLink href="contact-us" text={t("header.contact")}  />
+              <DesktopNavLink
+                href={ApplicationRoutes.pages.contact}
+                text={t("header.contact")}
+              />
 
               <ChangeLangButton />
             </div>
@@ -118,23 +125,26 @@ function Header() {
             <div  
               className="flex items-center gap-x-7 max-lg:hidden"
             >
-              <DesktopNavLink href="" text={t("header.home")}  />
+              <DesktopNavLink
+                href={ApplicationRoutes.pages.home}
+                text={t("header.home")}
+              />
               <DesktopNavLink
                 items={[
                   {
                     text: t("header.company.sub-links.about-us"),
-                    href: "company/about-us"
+                    href: ApplicationRoutes.pages.company["about-us"]
                   },
                   {
                     text: t("header.company.sub-links.our-team"),
-                    href: "company/our-team"
+                    href: ApplicationRoutes.pages.company["our-team"]
                   },
                   {
                     text: t("header.company.sub-links.services"),
-                    href: "company/services"
+                    href: ApplicationRoutes.pages.company.services
                   }
                 ]}
-                href="company"
+                href=""
                 text={t("header.company.text")}
               />
               <DesktopNavLink
@@ -143,15 +153,15 @@ function Header() {
                 items={[
                   {
                     text: t("header.work.sub-links.project"),
-                    href: "project"
+                    href: ApplicationRoutes.pages.work.project
                   },
                   {
                     text: t("header.work.sub-links.project-details"),
-                    href: "project/project-details"
+                    href: ApplicationRoutes.pages.work["project-details"]
                   },
                   {
                     text: t('header.work.sub-links.hot-projects'),
-                    href: "project/hot-projects"
+                    href: ApplicationRoutes.pages.work["best-projects"]
                   }
                 ]}
               />
@@ -161,27 +171,30 @@ function Header() {
                 items={[
                   {
                     text: t("header.blog.sub-links.blog"),
-                    href: "blog"
+                    href: ApplicationRoutes.pages.blog.blog
                   },
                   {
                     text: t("header.blog.sub-links.latest-articles"),
-                    href: "blog/latest-articles"
+                    href: ApplicationRoutes.pages.blog["latest-articles"]
                   },
                   {
                     text: t("header.blog.sub-links.recommended-for-you"),
-                    href: "blog/recommended"
+                    href: ApplicationRoutes.pages.blog["recommended-for-you"]
                   },
                   {
                     text: t("header.blog.sub-links.best-of-day"),
-                    href: "blog/best-of-day"
+                    href: ApplicationRoutes.pages.blog["best-of-day"]
                   },
                   {
                     text: t("header.blog.sub-links.best-of-week"),
-                    href: "blog/best-of-week"
+                    href: ApplicationRoutes.pages.blog["best-of-week"]
                   },
                 ]}
               />
-              <DesktopNavLink href="contact-us" text={t("header.contact")}  />
+              <DesktopNavLink
+                href={ApplicationRoutes.pages.contact}
+                text={t("header.contact")}
+              />
               
               <ChangeLangButton />
             </div>

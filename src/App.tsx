@@ -2,21 +2,23 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import ApplicationLayout from "./layouts/ApplicationLayout"
-import { Suspense, useEffect } from "react"
+import { useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { ChakraProvider } from "@chakra-ui/react"
 import NotFound from "./pages/NotFound"
-import Loading from "./pages/Loading"
+import AboutUs from "./pages/AboutUs"
+import { ApplicationRoutes } from "./routes"
+import ContactUs from "./pages/ContactUs"
 
 function App() {
-  const [t, i18n] = useTranslation()
+  const [_, i18n] = useTranslation()  
 
   // set theme 
   useEffect(
     () => {
       const link = document.createElement("link")
       link.rel = "stylesheet"
-      link.href = import.meta.env.BASE_URL+"themes/light.css"
+      link.href = import.meta.env.BASE_URL+"/themes/light.css"
       document.head.append(link)
     },
     []
@@ -37,8 +39,10 @@ function App() {
     <ChakraProvider>
       <ApplicationLayout>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="/blog" element={<p>hello world from blog</p>} />
+          <Route path={ApplicationRoutes.pages.home} element={<Home />} />
+          <Route path={import.meta.env.BASE_URL+"/blog"} element={<p>hello world from blog</p>} />
+          <Route path={ApplicationRoutes.pages.contact} element={<ContactUs />} />
+          <Route path={ApplicationRoutes.pages.company["about-us"]} element={<AboutUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ApplicationLayout>

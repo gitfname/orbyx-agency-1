@@ -4,18 +4,14 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
     Button,
 } from '@chakra-ui/react'
-import { ArrowDownIcon, ChevronDownIcon } from "@chakra-ui/icons"
+import { ChevronDownIcon } from "@chakra-ui/icons"
 
 import { useTranslation } from 'react-i18next'
 
 function ChangeLangButton() {
-    const [t, i18n] = useTranslation()
+    const [_, i18n] = useTranslation()
 
     return (
         <Menu>
