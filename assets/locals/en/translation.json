@@ -124,6 +124,7 @@
             }
         ],
         "projects": {
+            "read-more-text": "Read more",
             "title": "Projects",
             "items": [
                 {

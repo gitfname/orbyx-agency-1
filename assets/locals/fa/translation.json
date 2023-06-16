@@ -125,6 +125,7 @@
         ],
         "projects": {
             "title": "پروژه های ما",
+            "read-more-text": "مشاهده بیشتر",
             "items": [
                 {
                     "id": "0",
