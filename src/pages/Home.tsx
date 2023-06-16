@@ -16,9 +16,9 @@ function Home() {
     <div className="pb-20">
       <Hero />
       <AboutUs_1 />
-      <Services_1 className="mt-14" />
+      <Services_1 className="mt-16" />
       <StatsSection_1 className="mt-14 px-4 lg:px-10" stats={t("home.stats")} />
-      <ProjectsSection projects={t("home.projects")} className="mt-20 px-4 lg:px-10" />
+      <ProjectsSection projects={t("home.projects.items")} title={t("home.projects.title")} className="mt-20 px-4 lg:px-10" />
       <WhyChooseUs className="mt-28 px-4 lg:px-10" />
       <OurTeamSection
         className="mt-28 px-4 lg:px-10"
@@ -32,6 +32,16 @@ function Home() {
         title={t("home.latest-news.title")}
         readMoreText={t("home.latest-news.read-more-text")}
       />
+      <div className="py-28 w-full mt-28 px-4 lg:px-10 bg-slate-200/90">
+        <p className="text-center text-5xl leading-[3.5rem] font-semibold text-black/80">
+          {t("home.text-1")}
+        </p>
+        <p className="text-center text-xl text-black/75 font-normal mt-4">{t("home.text-2")}</p>
+        <button className="bg-black/90 mt-9 rounded-sm py-3 px-6 text-white text-lg font-medium w-max
+        block mx-auto active:scale-95 duration-300">
+          {t("home.call-us")}
+        </button>
+      </div>
 
     </div>
   )

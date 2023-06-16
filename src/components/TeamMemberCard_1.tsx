@@ -17,7 +17,7 @@ interface Props {
 function TeamMemberCard_1({ className="", id, img, name, role, socialLinks=[] }: Props) {
     
     return (
-        <div className={"" + className}>
+        <div className={"w-full max-w-sm " + className}>
             <img
                 alt=""
                 src={img}

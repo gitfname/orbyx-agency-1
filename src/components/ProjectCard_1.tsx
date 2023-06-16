@@ -10,7 +10,7 @@ interface Props {
 function ProjectCard_1({ id, img, title, desc, link }: Props) {
 
   return (
-    <div className="w-full rounded-xl p-4 shadow-[2px_2px_15px_rgba(70,70,70,0.1)] cursor-pointer">
+    <div className="w-full rounded-xl p-4 py-8 shadow-[2px_2px_15px_rgba(70,70,70,0.1)] cursor-pointer max-w-sm">
 
         <img
             alt=""

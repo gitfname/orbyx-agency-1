@@ -123,29 +123,32 @@
                 "end": 689
             }
         ],
-        "projects": [
-            {
-                "id": "0",
-                "img": "/assets/images/prj-1-img.jpg",
-                "title": "عنوان پروژه 1",
-                "desc": "توضیحات تستی برای پروژه 1 در اینجا هست",
-                "link": ""
-            },
-            {
-                "id": "1",
-                "img": "/assets/images/prj-2-img.jpg",
-                "title": "عنوان پروژه 2",
-                "desc": "توضیحات تستی برای پروژه 2 در اینجا هست",
-                "link": ""
-            },
-            {
-                "id": "2",
-                "img": "/assets/images/prj-3-img.jpg",
-                "title": "عنوان پروژه 3",
-                "desc": "توضیحات تستی برای پروژه 3 در اینجا هست",
-                "link": ""
-            }
-        ],
+        "projects": {
+            "title": "پروژه های ما",
+            "items": [
+                {
+                    "id": "0",
+                    "img": "/assets/images/prj-1-img.jpg",
+                    "title": "عنوان پروژه 1",
+                    "desc": "توضیحات تستی برای پروژه 1 در اینجا هست",
+                    "link": ""
+                },
+                {
+                    "id": "1",
+                    "img": "/assets/images/prj-2-img.jpg",
+                    "title": "عنوان پروژه 2",
+                    "desc": "توضیحات تستی برای پروژه 2 در اینجا هست",
+                    "link": ""
+                },
+                {
+                    "id": "2",
+                    "img": "/assets/images/prj-3-img.jpg",
+                    "title": "عنوان پروژه 3",
+                    "desc": "توضیحات تستی برای پروژه 3 در اینجا هست",
+                    "link": ""
+                }
+            ]
+        },
         "why-choose-us": {
             "title": "چرا مارو انتخاب کنید؟",
             "subtitle": "مراقبت از بیمار مهم است که بیمار دنبالش باشد، اما در چنین زمانی اتفاق می افتد که کار و درد زیاد است. برای رسیدن به کوچکترین جزئیات، هیچ کس نباید هیچ نوع کاری را تمرین کند، مگر اینکه از آن بهره ای ببرد. درد Duis یا Irure در توبیخ",
@@ -177,7 +180,7 @@
                 {
                     "id": "0",
                     "visible": true,
-                    "img": "/public/assets/images/our-team-member-1.jpg",
+                    "img": "/assets/images/our-team-member-1.jpg",
                     "name": "احمد کاظمی",
                     "role": "برنامه نویس فرانت اند",
                     "social-links": [
@@ -266,6 +269,107 @@
         "latest-news": {
             "title": "آخرین مقاله ها و اپدیت ها",
             "read-more-text": "مشاهده بیشتر"
-        }
+        },
+        "text-1": "این یک واقعیت ثابت شده است که خواننده میخواند",
+        "text-2": "50% تخفیف فقط تا 31 شهریور",
+        "call-us": "به ما زنگ بزنید. +123-456-789"
+    },
+    "footer": {
+        "items": [
+            {
+                "id": "0",
+                "title": "ارتباط با ما",
+                "items": [
+                    {
+                        "id": "0",
+                        "title": "آدرس ما اینجا هست",
+                        "link": "https://our-address-in-google-map.com"
+                    },
+                    {
+                        "id": "1",
+                        "title": "+123-456-789",
+                        "link": ""
+                    },
+                    {
+                        "id": "2",
+                        "title": "orbyx@support.com",
+                        "link": "mailto:orbyx@support.com"
+                    }
+                ]
+            },
+            {
+                "id": "1",
+                "title": "لینک های مفید",
+                "items": [
+                    {
+                        "id": "0",
+                        "title": "درباره ما",
+                        "link": "/about-us"
+                    },
+                    {
+                        "id": "1",
+                        "title": "خدمات ما",
+                        "link": "/services"
+                    },
+                    {
+                        "id": "2",
+                        "title": "پروژه های ما",
+                        "link": "/projects"
+                    },
+                    {
+                        "id": "3",
+                        "title": "پرسش پاسخ",
+                        "link": "/faqs"
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "title": "شرکت",
+                "items": [
+                    {
+                        "id": "0",
+                        "title": "تیم ما",
+                        "link": "/our-team"
+                    },
+                    {
+                        "id": "1",
+                        "title": "استخدام",
+                        "link": "/get-hired"
+                    }
+                ]
+            }
+        ]
+    },
+    "mobile-menu": {
+        "title": "Orbyx",
+        "account-text": "حساب کاربری",
+        "items": [
+            {
+                "id": "0",
+                "text": "خانه",
+                "link": "/"
+            },
+            {
+                "id": "1",
+                "text": "شرکت",
+                "link": "/company"
+            },
+            {
+                "id": "2",
+                "text": "کار",
+                "link": "/work"
+            },
+            {
+                "id": "2",
+                "text": "وبلاگ",
+                "link": "/blog"
+            },
+            {
+                "id": "2",
+                "text": "ارتباط  با ما",
+                "link": "/contact-us"
+            }
+        ]
     }
 }

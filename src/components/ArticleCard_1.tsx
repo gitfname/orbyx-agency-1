@@ -19,7 +19,7 @@ function ArticleCard_1({
     hasCommentsText="Comments", notHasCommentsText="No Comments"
 }: Props) {
   return (
-    <div className={"overflow-hidden rounded-xl" + className }>
+    <div className={"overflow-hidden rounded-xl max-w-sm " + className }>
         <img    
             alt=""
             src={img}

@@ -14,15 +14,15 @@ function AboutUs_1() {
     const [t, i18n] = useTranslation()
 
     return (
-        <section className="w-full px-4 lg:px-10 grid grid-cols-[35%_65%] place-items-center -translate-y-10">
+        <section className="w-full px-4 lg:px-10 grid grid-cols-1 gap-6 gap-y-12 lg:grid-cols-[35%_65%] place-items-center max-lg:mt-16 lg:-translate-y-10">
 
             <img
                 alt=""
                 src="/assets/images/abount-img-1.jpg"
-                className="w-full h-auto object-center object-cover rounded-sm"
+                className="w-full h-auto object-center object-cover rounded-sm max-lg:hidden"
             />
 
-            <div className="flex flex-col gap-y-6">
+            <div className="flex flex-col gap-y-6 w-full">
 
                 <p className="text-5xl font-normal text-slate-800 tracking-wide">{t("home.about-us.title")}</p>
                 <p className="text-base text-slate-700/80 tracking-wide font-medium max-w-prose">
@@ -30,7 +30,7 @@ function AboutUs_1() {
                 </p>
                 <p className="text-2xl font-normal text-slate-800 tracking-wide">{t("home.awards.title")}</p>
 
-                <Accordion minW="42rem" maxW="42rem" allowMultiple defaultIndex={[0]}>
+                {/* <Accordion minW="42rem" maxW="42rem" allowMultiple defaultIndex={[0]}>
 
                     {
                         t("home.awards.items")?.map((item, i) => (
@@ -53,7 +53,7 @@ function AboutUs_1() {
                     }
 
                     
-                </Accordion>
+                </Accordion> */}
 
 
             </div>

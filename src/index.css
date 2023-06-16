@@ -2,83 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 210 40% 98%;
-
-    --ring: 215 20.2% 65.1%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
-
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
-
-    --popover: 224 71% 4%;
-    --popover-foreground: 215 20.2% 65.1%;
-
-    --card: 224 71% 4%;
-    --card-foreground: 213 31% 91%;
-
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
-
-    --secondary: 222.2 47.4% 11.2%;
-    --secondary-foreground: 210 40% 98%;
-
-    --accent: 216 34% 17%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-
-    --ring: 216 34% 17%;
-
-    --radius: 0.5rem;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
 :root {
-    @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
+  @apply text-[14px] xl:text-[16px] 2xl:text-[18px];
+}
+
+
+@font-face {
+  font-family: iranyekan100;
+  src: url(/fonts/iranyekan/Qs_Iranyekan-thin.ttf);
+}
+@font-face {
+  font-family: iranyekan200;
+  src: url(/fonts/iranyekan/Qs_Iranyekan-light.ttf);
+}
+@font-face {
+  font-family: iranyekan300;
+  src: url(/fonts/iranyekan/Qs_Iranyekan.ttf);
+}
+@font-face {
+  font-family: iranyekan400;
+  src: url(/fonts/iranyekan/Qs_Iranyekan-medium.ttf);
+}
+@font-face {
+  font-family: iranyekan500;
+  src: url(/fonts/iranyekan/Qs_Iranyekan-bold.ttf);
+}
+@font-face {
+  font-family: iranyekan600;
+  src: url(/fonts/iranyekan/Qs_Iranyekan-extrabold.ttf);
+}
+@font-face {
+  font-family: iranyekan700;
+  src: url(/fonts/iranyekan/Qs_Iranyekan-black.ttf);
+}
+@font-face {
+  font-family: iranyekan800;
+  src: url(/fonts/iranyekan/Qs_Iranyekan-extrablack.ttf);
+}
+
+* {
+  font-family: iranyekan500;
+}
+
+
+
+
+.fadein-x-anim {
+  opacity: 0;
+  display: inline-block;
+  transform: translateX(var(--trx));
+  animation-name: fadein-right-anim-1;
+  animation-duration: var(--duration);
+  animation-delay: var(--delay);
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadein-right-anim-1{
+  to {
+      transform: translateX(0rem);
+      opacity: 1;
+  }
+}
+
+.loading-container span span {
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
+  animation-name: anim-1;
+  animation-duration: 1.4s;
+  animation-delay: 4s;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes anim-1 {
+  to {
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
+  }
 }

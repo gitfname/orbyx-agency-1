@@ -23,8 +23,8 @@ function LatestNewsSection({ className, readMoreText, title }: Props) {
     )
     return (
         <div className={"w-full " + className}>
-            <p className="text-4xl text-slate-800 font-normal tracking-wide text-center">{title}</p>
-            <div className="w-full grid grid-cols-3 gap-6 mt-14">
+            <p className="text-3xl text-slate-800 font-normal tracking-wide text-center">{title}</p>
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-12 mt-14 place-items-center">
             {
                 news.map(item => (
                 <ArticleCard_1

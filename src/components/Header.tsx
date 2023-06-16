@@ -1,6 +1,8 @@
 import DesktopNavLink from "./DesktopNavLink/DesktopNavLink"
 import Logo from "./Logo"
 import { useTranslation } from "react-i18next"
+import MobileMenu from "./MobileMenu"
+import ChangeLangButton from "./ChangeLangButton"
 
 function Header() {
 
@@ -8,7 +10,7 @@ function Header() {
 
   return (
     <nav
-      className="w-full max-w-[95rem] mx-auto py-6 px-10 flex items-center justify-between
+      className="w-full max-w-[95rem] mx-auto py-5 px-4 lg:px-10 flex items-center justify-between
       bg-[--header-bg]"
     >
 
@@ -18,10 +20,15 @@ function Header() {
           <>
             <Logo />
 
+            <div className="lg:hidden">
+              <MobileMenu />
+            </div>
+
             <div  
-              className="flex items-center gap-x-7"
+              className="flex items-center gap-x-7 max-lg:hidden"
             >
               <DesktopNavLink href="" text={t("header.home")}  />
+
               <DesktopNavLink
                 items={[
                   {
@@ -40,6 +47,7 @@ function Header() {
                 href="company"
                 text={t("header.company.text")}
               />
+
               <DesktopNavLink
                 href="work"
                 text={t("header.work.text")}
@@ -58,6 +66,7 @@ function Header() {
                   }
                 ]}
               />
+
               <DesktopNavLink
                 href="blog"
                 text={t("header.blog.text")}
@@ -84,23 +93,30 @@ function Header() {
                   },
                 ]}
               />
+
               <DesktopNavLink href="contact-us" text={t("header.contact")}  />
+
+              <ChangeLangButton />
             </div>
 
             <button className="self-stretch py-6 px-6 text-base bg-gray-100 rounded-sm
-            text-slate-800 font-medium active:scale-95 transition-transform duration-300">
+            text-slate-800 font-medium active:scale-95 transition-transform duration-300 max-lg:hidden">
               {t("header.cta-text")}
             </button>
           </>
         :
           <>
             <button className="self-stretch py-6 px-6 text-base bg-gray-100 rounded-sm
-            text-slate-800 font-medium active:scale-95 transition-transform duration-300">
+            text-slate-800 font-medium active:scale-95 transition-transform duration-300 max-lg:hidden">
               {t("header.cta-text")}
             </button>
 
+            <div className="lg:hidden">
+              <MobileMenu />
+            </div>
+
             <div  
-              className="flex items-center gap-x-7"
+              className="flex items-center gap-x-7 max-lg:hidden"
             >
               <DesktopNavLink href="" text={t("header.home")}  />
               <DesktopNavLink
@@ -166,6 +182,8 @@ function Header() {
                 ]}
               />
               <DesktopNavLink href="contact-us" text={t("header.contact")}  />
+              
+              <ChangeLangButton />
             </div>
 
             <Logo />

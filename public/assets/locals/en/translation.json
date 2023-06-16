@@ -123,29 +123,32 @@
                 "end": 689
             }
         ],
-        "projects": [
-            {
-                "id": "0",
-                "img": "/assets/images/prj-1-img.jpg",
-                "title": "Garage flooring",
-                "desc": "120x70 square meter. Expory model High quality",
-                "link": ""
-            },
-            {
-                "id": "1",
-                "img": "/assets/images/prj-2-img.jpg",
-                "title": "Floor coating",
-                "desc": "120x70 square meter. Expory model High quality",
-                "link": ""
-            },
-            {
-                "id": "2",
-                "img": "/assets/images/prj-3-img.jpg",
-                "title": "Floor tilling",
-                "desc": "120x70 square meter. Expory model High quality",
-                "link": ""
-            }
-        ],
+        "projects": {
+            "title": "Projects",
+            "items": [
+                {
+                    "id": "0",
+                    "img": "/assets/images/prj-1-img.jpg",
+                    "title": "Garage flooring",
+                    "desc": "120x70 square meter. Expory model High quality",
+                    "link": ""
+                },
+                {
+                    "id": "1",
+                    "img": "/assets/images/prj-2-img.jpg",
+                    "title": "Floor coating",
+                    "desc": "120x70 square meter. Expory model High quality",
+                    "link": ""
+                },
+                {
+                    "id": "2",
+                    "img": "/assets/images/prj-3-img.jpg",
+                    "title": "Floor tilling",
+                    "desc": "120x70 square meter. Expory model High quality",
+                    "link": ""
+                }
+            ]
+        },
         "why-choose-us": {
             "title": "Why Choose Us?",
             "subtitle": "Maecenas eros nisi, faucibus et urna ac, finibus dapibus velit. Aenean posuere mattis maximus. Nullam enim nulla, molestie et hendrerit sed, fringilla quis eros. Duis mi risus, viverra commodo semper finibus, sagittis ut dolor. Integer non leo in sapien finibus scelerisque at eu arcu.",
@@ -177,7 +180,7 @@
                 {
                     "id": "0",
                     "visible": true,
-                    "img": "/public/assets/images/our-team-member-1.jpg",
+                    "img": "/assets/images/our-team-member-1.jpg",
                     "name": "Jhony Abraham",
                     "role": "FrontEnd Developer",
                     "social-links": [
@@ -266,6 +269,107 @@
         "latest-news": {
             "title": "Latest News & Updates",
             "read-more-text": "Read more"
-        }
+        },
+        "text-1": "you'll be Floored by ore selection and prices!",
+        "text-2": "Get special offer up to 50% on June",
+        "call-us": "Call us +123-456-789"
+    },
+    "footer": {
+        "items": [
+            {
+                "id": "0",
+                "title": "Contact Us",
+                "items": [
+                    {
+                        "id": "0",
+                        "title": "99 Roving St., Big City",
+                        "link": "https://our-address-in-google-map.com"
+                    },
+                    {
+                        "id": "1",
+                        "title": "+123-456-789",
+                        "link": ""
+                    },
+                    {
+                        "id": "2",
+                        "title": "orbyx@support.com",
+                        "link": "mailto:orbyx@support.com"
+                    }
+                ]
+            },
+            {
+                "id": "1",
+                "title": "Helpfull Links",
+                "items": [
+                    {
+                        "id": "0",
+                        "title": "About Us",
+                        "link": "/about-us"
+                    },
+                    {
+                        "id": "1",
+                        "title": "Services",
+                        "link": "/services"
+                    },
+                    {
+                        "id": "2",
+                        "title": "Projects",
+                        "link": "/projects"
+                    },
+                    {
+                        "id": "3",
+                        "title": "FAQs",
+                        "link": "/faqs"
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "title": "Company",
+                "items": [
+                    {
+                        "id": "0",
+                        "title": "Our Team",
+                        "link": "/our-team"
+                    },
+                    {
+                        "id": "1",
+                        "title": "Get Hired",
+                        "link": "/get-hired"
+                    }
+                ]
+            }
+        ]
+    },
+    "mobile-menu": {
+        "title": "Orbyx",
+        "account-text": "Account",
+        "items": [
+            {
+                "id": "0",
+                "text": "Home",
+                "link": "/"
+            },
+            {
+                "id": "1",
+                "text": "Company",
+                "link": "/company"
+            },
+            {
+                "id": "2",
+                "text": "Work",
+                "link": "/work"
+            },
+            {
+                "id": "2",
+                "text": "Blog",
+                "link": "/blog"
+            },
+            {
+                "id": "2",
+                "text": "Contact Us",
+                "link": "/contact-us"
+            }
+        ]
     }
 }

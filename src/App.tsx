@@ -2,9 +2,11 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import ApplicationLayout from "./layouts/ApplicationLayout"
-import { useEffect } from "react"
+import { Suspense, useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { ChakraProvider } from "@chakra-ui/react"
+import NotFound from "./pages/NotFound"
+import Loading from "./pages/Loading"
 
 function App() {
   const [t, i18n] = useTranslation()
@@ -37,6 +39,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/blog" element={<p>hello world from blog</p>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </ApplicationLayout>
     </ChakraProvider>
