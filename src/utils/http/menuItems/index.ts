@@ -1,3 +1,4 @@
+import { ApplicationRoutes } from "../../../routes"
 
 interface menuItemsInnerItemsOptions {
     id: string,
@@ -61,27 +62,27 @@ async function menuItems({ lng }: menuItemsProps): Promise<menuItemOptions> {
                         {
                             "id": "0",
                             "text": "خانه",
-                            "link": "/"
+                            "link": ApplicationRoutes.pages.home
                         },
                         {
                             "id": "1",
                             "text": "شرکت",
-                            "link": "/company"
+                            "link": import.meta.env.BASE_URL+"/still-in-dev"
                         },
                         {
                             "id": "2",
                             "text": "کار",
-                            "link": "/work"
+                            "link": import.meta.env.BASE_URL+"/still-in-dev"
                         },
                         {
                             "id": "2",
                             "text": "وبلاگ",
-                            "link": "/blog"
+                            "link": ApplicationRoutes.pages.blog.blog
                         },
                         {
                             "id": "2",
                             "text": "ارتباط  با ما",
-                            "link": "/contact-us"
+                            "link": ApplicationRoutes.pages.contact
                         }
                     ]
                 }
