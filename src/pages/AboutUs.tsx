@@ -11,8 +11,8 @@ function AboutUs() {
     <div className="w-full min-h-screen">
 
       <div className="w-full py-32 bg-black/95 flex flex-col items-center justify-center px-4">
-          <p className="text-white text-6xl lg:text-7xl">About us</p>
-          <p className="text-lg mt-3 text-white/60">Home - About us</p>
+          <p className="text-white text-6xl lg:text-7xl">{t("about-us.title")}</p>
+          <p className="text-lg mt-3 text-white/60">{t("about-us.subtitle")}</p>
       </div>
 
       <div className="w-full lg:px-10 px-4 grid-cols-1 grid lg:grid-cols-[7fr_5fr] gap-x-8 gap-y-12 my-20 place-items-center">
@@ -21,11 +21,11 @@ function AboutUs() {
           <p
             className="text-5xl lg:text-6xl font-[iranyekan400] text-slate-900 leading-[4.2rem]"
           >
-            Great floor begin with great relationships
+            {t("about-us.text-1")}
           </p>
 
           <p className="text-base text-slate-700 mt-5 font-[iranyekan300] leading-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut nemo recusandae quae ipsum nihil repudiandae laborum accusantium possimus neque. Iste omnis veniam laudantium maxime, quos vitae ullam.
+            {t("about-us.text-2")}
           </p>
 
           <div className="mt-9">

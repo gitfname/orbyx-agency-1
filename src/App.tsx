@@ -12,6 +12,7 @@ import ContactUs from "./pages/ContactUs"
 import OurTeam from "./pages/OurTeam"
 import Services from "./pages/Services"
 import Projects from "./pages/Projects"
+import ProjectDetails from "./pages/ProjectDetails"
 
 function App() {
   const [_, i18n] = useTranslation()  
@@ -49,6 +50,7 @@ function App() {
           <Route path={ApplicationRoutes.pages.company["our-team"]} element={<OurTeam />} />
           <Route path={ApplicationRoutes.pages.company.services} element={<Services />} />
           <Route path={ApplicationRoutes.pages.work.project} element={<Projects />} />
+          <Route path={ApplicationRoutes.pages.work["project-details"]} element={<ProjectDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ApplicationLayout>

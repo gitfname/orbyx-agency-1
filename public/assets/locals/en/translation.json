@@ -275,6 +275,83 @@
         "text-2": "Get special offer up to 50% on June",
         "call-us": "Call us +123-456-789"
     },
+    "project-details": {
+        "title": "Project Details",
+        "subtitle": "Home - Project Details",
+        "items": [
+            {
+                "id": "0",
+                "title": "Floor Coating In Berlin, Germany",
+                "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas assumenda asperiores explicabo culpa nisi tempore?",
+                "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui accusantium vel vero. Et, alias. Amet sapiente sunt assumenda similique! Voluptas nihil enim distinctio possimus voluptate. Facilis at delectus tenetur culpa excepturi voluptates error?",
+                "img": "/assets/images/img-5.jpg",
+                "button-text": "Download Brochure",
+                "workProperties": [
+                    {
+                        "id": "0",
+                        "name": "Location",
+                        "value": "Berlin, Germany"
+                    },
+                    {
+                        "id": "1",
+                        "name": "Size",
+                        "value": "120 x 80 square meter"
+                    },
+                    {
+                        "id": "2",
+                        "name": "Services",
+                        "value": "Epoxy floor, Refloor"
+                    }
+                ]
+            },
+            {
+                "id": "1",
+                "title": "Floor Tiling In Houston, USA",
+                "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas assumenda asperiores explicabo culpa nisi tempore?",
+                "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui accusantium vel vero. Et, alias. Amet sapiente sunt assumenda similique! Voluptas nihil enim distinctio possimus voluptate. Facilis at delectus tenetur culpa excepturi voluptates error?",
+                "img": "/assets/images/img-6.jpg",
+                "button-text": "Download Brochure",
+                "workProperties": [
+                    {
+                        "id": "0",
+                        "name": "Location",
+                        "value": "Houston, USA"
+                    },
+                    {
+                        "id": "1",
+                        "name": "Size",
+                        "value": "120 x 80 square meter"
+                    },
+                    {
+                        "id": "2",
+                        "name": "Services",
+                        "value": "Tilling Refloor"
+                    }
+                ]
+            }
+        ]
+    },
+    "our-projects": {
+        "title": "Our Projects",
+        "subtitle": "Home - Our Projects"
+    },
+    "about-us": {
+        "title": "About Us",
+        "subtitle": "Home - About Us",
+        "text-1": "Great floor begin with great relationships",
+        "text-2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut nemo recusandae quae ipsum nihil repudiandae laborum accusantium possimus neque. Iste omnis veniam laudantium maxime, quos vitae ullam."
+    },
+    "our-team": {
+        "title": "Our Team",
+        "subtitle": "Home - Our Team",
+        "text-1": "985+ Project Complete Over The World",
+        "text-2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aut nemo perferendis non, nisi quas.",
+        "text-3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut nemo recusandae quae ipsum nihil repudiandae laborum accusantium possimus neque. Iste omnis veniam laudantium maxime, quos vitae ullam."
+    },
+    "our-services": {
+        "title": "Our Services",
+        "subtitle": "Home - Our Services"
+    },
     "contact-us": {
         "title": "Contact",
         "sub-title": "Home - Contact",

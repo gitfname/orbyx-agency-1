@@ -10,8 +10,8 @@ function OurTeam() {
         <div className="w-full min-h-screen">
 
             <div className="w-full py-32 bg-black/95 flex flex-col items-center justify-center px-4">
-                <p className="text-white text-6xl lg:text-7xl">Our Team</p>
-                <p className="text-lg mt-3 text-white/60">Home - Our Team</p>
+                <p className="text-white text-6xl lg:text-7xl">{t("our-team.title")}</p>
+                <p className="text-lg mt-3 text-white/60">{t("our-team.subtitle")}</p>
             </div>
 
             <OurTeamSection
@@ -28,17 +28,17 @@ function OurTeam() {
                     <p
                         className="text-5xl font-[iranyekan300] text-slate-900 leading-[3.8rem]"
                     >
-                        985+ Project Complete Over The World
+                        {t("our-team.text-1")}
                     </p>
 
                     <p
                         className="text-base font-[iranyekan300] text-slate-900 mt-5 max-w-[90%]"
                     >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aut nemo perferendis non, nisi quas.
+                        {t("our-team.text-2")}
                     </p>
 
                     <p className="text-sm text-slate-600 mt-5 font-[iranyekan300]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ut nemo recusandae quae ipsum nihil repudiandae laborum accusantium possimus neque. Iste omnis veniam laudantium maxime, quos vitae ullam.
+                        {t("our-team.text-3")}
                     </p>
 
                 </div>

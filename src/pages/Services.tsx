@@ -12,8 +12,8 @@ function Services() {
         <div className="w-full min-h-screen">
 
             <div className="w-full py-32 bg-black/95 flex flex-col items-center justify-center px-4">
-                <p className="text-white text-6xl lg:text-7xl">Our services</p>
-                <p className="text-lg mt-3 text-white/60">Home - Our services</p>
+                <p className="text-white text-6xl lg:text-7xl">{t("our-services.title")}</p>
+                <p className="text-lg mt-3 text-white/60">{t("our-services.subtitle")}</p>
             </div>
 
             <Services_1 className="my-16" />
