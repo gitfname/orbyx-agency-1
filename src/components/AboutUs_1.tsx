@@ -1,17 +1,10 @@
 
 import { useTranslation } from "react-i18next"
-import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionIcon,
-    AccordionPanel,
-    Box
-} from "@chakra-ui/react"
+import AwardsAccordion from "./AwardsAccordion"
 
 function AboutUs_1() {
 
-    const [t, i18n] = useTranslation()
+    const [t] = useTranslation()
 
     return (
         <section className="w-full px-4 lg:px-10 grid grid-cols-1 gap-6 gap-y-12 lg:grid-cols-[35%_65%] place-items-center max-lg:mt-16 lg:-translate-y-10">
@@ -30,30 +23,7 @@ function AboutUs_1() {
                 </p>
                 <p className="text-2xl font-normal text-slate-800 tracking-wide">{t("home.awards.title")}</p>
 
-                <Accordion className="max-lg:hidden" minW="42rem" maxW="42rem" allowMultiple defaultIndex={[0]}>
-
-                    {
-                        (():any => t("home.awards.items"))()?.map((item:any, i:number) => (
-                            <AccordionItem key={i}>
-                                <AccordionButton _expanded={{color: "blackAlpha.900"}} color="blackAlpha.800" fontWeight="medium" letterSpacing="wide" textAlign={i18n.dir(i18n.language) === "ltr" ? "left" : "right"}>
-                                    <Box flexGrow={1}>
-                                        {item?.name}
-                                        &nbsp;/&nbsp;
-                                        {item?.date}
-                                    </Box>
-                                    <AccordionIcon />
-                                </AccordionButton>
-                                <AccordionPanel>
-                                    <p className="text-sm text-slate-800 font-normal leading-5">
-                                        {item?.description}
-                                    </p>
-                                </AccordionPanel>
-                            </AccordionItem>
-                        ))
-                    }
-
-                    
-                </Accordion>
+                <AwardsAccordion />
 
 
             </div>

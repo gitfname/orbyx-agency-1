@@ -27,27 +27,27 @@ async function menuItems({ lng }: menuItemsProps): Promise<menuItemOptions> {
                         {
                             "id": "0",
                             "text": "Home",
-                            "link": "/"
+                            "link": ApplicationRoutes.pages.home
                         },
                         {
                             "id": "1",
                             "text": "Company",
-                            "link": "/company"
+                            "link": import.meta.env.BASE_URL+"/still-in-dev"
                         },
                         {
                             "id": "2",
                             "text": "Work",
-                            "link": "/work"
+                            "link": import.meta.env.BASE_URL+"/still-in-dev"
                         },
                         {
                             "id": "2",
                             "text": "Blog",
-                            "link": "/blog"
+                            "link": import.meta.env.BASE_URL+"/still-in-dev"
                         },
                         {
                             "id": "2",
                             "text": "Contact Us",
-                            "link": "/contact-us"
+                            "link": ApplicationRoutes.pages.contact
                         }
                     ]
                 }
