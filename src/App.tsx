@@ -9,6 +9,9 @@ import NotFound from "./pages/NotFound"
 import AboutUs from "./pages/AboutUs"
 import { ApplicationRoutes } from "./routes"
 import ContactUs from "./pages/ContactUs"
+import OurTeam from "./pages/OurTeam"
+import Services from "./pages/Services"
+import Projects from "./pages/Projects"
 
 function App() {
   const [_, i18n] = useTranslation()  
@@ -43,6 +46,9 @@ function App() {
           <Route path={import.meta.env.BASE_URL+"/blog"} element={<p>hello world from blog</p>} />
           <Route path={ApplicationRoutes.pages.contact} element={<ContactUs />} />
           <Route path={ApplicationRoutes.pages.company["about-us"]} element={<AboutUs />} />
+          <Route path={ApplicationRoutes.pages.company["our-team"]} element={<OurTeam />} />
+          <Route path={ApplicationRoutes.pages.company.services} element={<Services />} />
+          <Route path={ApplicationRoutes.pages.work.project} element={<Projects />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ApplicationLayout>

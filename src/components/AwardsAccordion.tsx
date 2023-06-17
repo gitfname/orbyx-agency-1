@@ -14,7 +14,7 @@ function AwardsAccordion() {
     const [t, i18n] = useTranslation()
 
     return (
-        <Accordion className="max-lg:hidden" minW="42rem" maxW="42rem" allowMultiple defaultIndex={[0]}>
+        <Accordion minW="100%" maxW="100%" allowMultiple defaultIndex={[0]}>
 
             {
                 (():any => t("home.awards.items"))()?.map((item:any, i:number) => (
