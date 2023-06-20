@@ -7,7 +7,7 @@ interface Props {
 
 function StatsSection_1({className, stats}: Props) {
   return (
-    <div className={"w-full bg-black/95 py-36 grid max-lg:gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center " + className} >
+    <div className={"w-full bg-black/95 py-36 grid max-lg:gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center " + className} >
         {
         stats?.map((stat, i) => (
             <div className="relative" key={i}>

@@ -2,17 +2,19 @@ import { useEffect, useState } from "react"
 import { AiOutlineMenu } from "react-icons/ai"
 import { Link, useNavigate } from "react-router-dom"
 import { useTranslation } from "react-i18next"
-import ChangeLangButton from "./ChangeLangButton"
+// import ChangeLangButton from "./ChangeLangButton"
 import { menuItems } from "../utils/http"
 import { menuItemOptions } from "../utils/http/menuItems"
-import {
-    Accordion,
-    AccordionButton,
-    AccordionIcon,
-    AccordionItem,
-    AccordionPanel,
-    Box
-} from "@chakra-ui/react"
+import { HashLink } from 'react-router-hash-link';
+// import {
+//     Accordion,
+//     AccordionButton,
+//     AccordionIcon,
+//     AccordionItem,
+//     AccordionPanel,
+//     Box
+// } from "@chakra-ui/react"
+import { ApplicationRoutes } from "../routes"
 
 const getLang = (lng) => {
     const languages = ["en", "fa"]
@@ -23,7 +25,7 @@ function MobileMenu() {
     const [isOpen, setIsOpen] = useState(false)
     const [t, i18n] = useTranslation()
     const [items, setItems] = useState<menuItemOptions>()
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     
 
     useEffect(
@@ -46,6 +48,7 @@ function MobileMenu() {
                 `}
             >
                 <div
+                    id="mobile-menu-back"
                     onClick={() => setIsOpen(false)}
                     className={`absolute top-0 left-0 z-10 w-full h-full bg-black/40 pointer-events-none opacity-0
                     transition-opacity duration-300
@@ -80,7 +83,42 @@ function MobileMenu() {
                         }
                     </div> */}
 
-                    <Accordion
+                    <div onClick={() => document.getElementById("mobile-menu-back").click()} className="flex flex-col gap-y-3 px-2">
+
+                        <Link
+                            to={ApplicationRoutes.pages.home}
+                            className="p-2.5 text-white text-sm font-[iranyekan400] tracking-wide
+                            hover:bg-white/5 rounded-lg transition-colors duration-300"
+                        >
+                            {t("header.home")}
+                        </Link>
+
+                        <HashLink
+                            to={import.meta.env.BASE_URL+"#about-us-section"}
+                            className="p-2.5 text-white text-sm font-[iranyekan400] tracking-wide
+                            hover:bg-white/5 rounded-lg transition-colors duration-300"
+                        >
+                            {t("about-us.title")}
+                        </HashLink>
+
+                        <HashLink
+                            to={import.meta.env.BASE_URL+"#our-services-section"}
+                            className="p-2.5 text-white text-sm font-[iranyekan400] tracking-wide
+                            hover:bg-white/5 rounded-lg transition-colors duration-300"
+                        >
+                            {t("home.services.title")}
+                        </HashLink>
+
+                        <HashLink
+                            to={import.meta.env.BASE_URL+"#our-projects-section"}
+                            className="p-2.5 text-white text-sm font-[iranyekan400] tracking-wide
+                            hover:bg-white/5 rounded-lg transition-colors duration-300"
+                        >
+                            {t("home.projects.title")}
+                        </HashLink>
+                    </div>
+
+                    {/* <Accordion
                         allowMultiple
                         display="flex"
                         flexDirection="column"
@@ -140,13 +178,13 @@ function MobileMenu() {
                         }
 
 
-                    </Accordion>
+                    </Accordion> */}
 
 
-                    <div className="mt-auto flex items-center gap-x-2 justify-center mb-6 mx-auto w-max rounded-xl
+                    {/* <div className="mt-auto flex items-center gap-x-2 justify-center mb-6 mx-auto w-max rounded-xl
                     border border-slate-700">
                         <ChangeLangButton />
-                    </div>
+                    </div> */}
 
 
                 </div>

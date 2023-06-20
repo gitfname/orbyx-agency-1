@@ -10,13 +10,14 @@ interface menuItem {
 interface DesktopNavLinkProps {
     text: string,
     href: string,
-    items?: Array<menuItem>
+    items?: Array<menuItem>,
+    asElem?: "a"
 }
 
-function DesktopNavLink({ text, href, items=[] }: DesktopNavLinkProps) {
+function DesktopNavLink({ text, href, items=[], asElem }: DesktopNavLinkProps) {
 
     if(items.length > 0) return <WithMenu text={text} items={items} />
-    return <WithoutMenu text={text} href={href} />
+    return <WithoutMenu asElem={asElem} text={text} href={href} />
 }
 
 export default DesktopNavLink

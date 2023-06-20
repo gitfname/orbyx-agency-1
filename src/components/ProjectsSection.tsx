@@ -22,8 +22,10 @@ function ProjectsSection({className, projects, title}: Props) {
                 img={import.meta.env.BASE_URL+project.img}
                 title={project.title}
                 desc={project.desc}
-                link={project.link}
+                link={import.meta.env.BASE_URL+project.link}
                 cta_text={t("home.projects.read-more-text")}
+                showDesc={false}
+                showReadMoreButton={false}
             />
             ))
         }

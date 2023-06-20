@@ -6,10 +6,11 @@ import { latestNewsOutPut } from "../utils/http/latestNews";
 interface Props {
     className: string,
     readMoreText: string,
-    title: string
+    title: string,
+    showReadMoreButton?: boolean
 }
 
-function LatestNewsSection({ className, readMoreText, title }: Props) {
+function LatestNewsSection({ className, readMoreText, title, showReadMoreButton=true }: Props) {
     const [news, setNews] = useState(Array<latestNewsOutPut>)
 
     useEffect(
@@ -34,6 +35,7 @@ function LatestNewsSection({ className, readMoreText, title }: Props) {
                     commentsCount={item.commentsCount}
                     link={item.link}
                     readMoreText={readMoreText}
+                    showReadMoreButton={showReadMoreButton}
                 />
                 ))
             }

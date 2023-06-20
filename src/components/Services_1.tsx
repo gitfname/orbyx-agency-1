@@ -3,9 +3,10 @@ import { useTranslation } from "react-i18next"
 
 interface props {
   className?: string
+  showReadMoreButton?: boolean
 }
 
-function Services_1({className=""}: props) {
+function Services_1({className="", showReadMoreButton=true}: props) {
   const [ t ] = useTranslation()
 
   return (
@@ -31,6 +32,7 @@ function Services_1({className=""}: props) {
               title={item?.title}
               description={item?.description}
               readMoreText={item?.["read-more-text"]}
+              showReadMore={showReadMoreButton}
             />
           ))
         }

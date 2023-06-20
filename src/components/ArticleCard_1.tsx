@@ -11,12 +11,13 @@ interface Props {
     readMoreText: string,
     className?: string,
     hasCommentsText?: string,
-    notHasCommentsText?: string
+    notHasCommentsText?: string,
+    showReadMoreButton: boolean
 }
 
 function ArticleCard_1({
     id, img, title, pubDate, desc, commentsCount, link, readMoreText, className="",
-    hasCommentsText="Comments", notHasCommentsText="No Comments"
+    hasCommentsText="Comments", notHasCommentsText="No Comments", showReadMoreButton
 }: Props) {
     id
     link
@@ -43,8 +44,15 @@ function ArticleCard_1({
             <p className="text-white/90 leading-6 text-base font-normal line-clamp-5">
                 {desc}
             </p>
+
+            {
+                showReadMoreButton
+                ?
+                    <ReadMoreButton_1 text={readMoreText} className="mt-3 !text-slate-100 hover:!text-slate-300" />
+                :
+                    false
+            }
             
-            <ReadMoreButton_1 text={readMoreText} className="mt-3 !text-slate-100 hover:!text-slate-300" />
         </div>
     </div>
   )

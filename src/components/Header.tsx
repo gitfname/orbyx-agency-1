@@ -103,7 +103,7 @@ function Header() {
                 text={t("header.contact")}
               />
 
-              <ChangeLangButton />
+              {/* <ChangeLangButton /> */}
             </div>
 
             <button className="self-stretch py-6 px-6 text-base bg-gray-100 rounded-sm
@@ -129,7 +129,13 @@ function Header() {
                 href={ApplicationRoutes.pages.home}
                 text={t("header.home")}
               />
+
               <DesktopNavLink
+                href={import.meta.env.BASE_URL+"#about-us-section"}
+                text={t("about-us.title")}
+                asElem="a"
+              />
+              {/* <DesktopNavLink
                 items={[
                   {
                     text: t("header.company.sub-links.about-us"),
@@ -146,8 +152,14 @@ function Header() {
                 ]}
                 href=""
                 text={t("header.company.text")}
-              />
+              /> */}
+
               <DesktopNavLink
+                href={import.meta.env.BASE_URL+"#our-services-section"}
+                text={t("home.services.title")}
+                asElem="a"
+              />
+              {/* <DesktopNavLink
                 href="work"
                 text={t("header.work.text")}
                 items={[
@@ -164,8 +176,10 @@ function Header() {
                     href: ApplicationRoutes.pages.work["best-projects"]
                   }
                 ]}
-              />
-              <DesktopNavLink
+              /> */}
+
+
+              {/* <DesktopNavLink
                 href="blog"
                 text={t("header.blog.text")}
                 items={[
@@ -190,13 +204,20 @@ function Header() {
                     href: ApplicationRoutes.pages.blog["best-of-week"]
                   },
                 ]}
+              /> */}
+
+              <DesktopNavLink 
+                href={import.meta.env.BASE_URL+"#our-projects-section"}
+                text={t("home.projects.title")}
+                asElem="a"
               />
+
               <DesktopNavLink
                 href={ApplicationRoutes.pages.contact}
                 text={t("header.contact")}
               />
               
-              <ChangeLangButton />
+              {/* <ChangeLangButton /> */}
             </div>
 
             <Logo />

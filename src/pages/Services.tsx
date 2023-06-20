@@ -16,7 +16,7 @@ function Services() {
                 <p className="text-lg mt-3 text-white/60">{t("our-services.subtitle")}</p>
             </div>
 
-            <Services_1 className="my-16" />
+            <Services_1 className="my-16" showReadMoreButton={false} />
 
             <StatsSection_1 className="px-4 lg:px-10" stats={t("home.stats")} />
 
@@ -24,6 +24,7 @@ function Services() {
                 className="mt-24 w-full px-4 lg:px-10"
                 title={t("home.latest-news.title")}
                 readMoreText={t("home.latest-news.read-more-text")}
+                showReadMoreButton={false}
             />
 
             <Banner_1 className="mt-24" />

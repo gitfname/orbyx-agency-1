@@ -8,6 +8,7 @@ interface ApplicationLayoutProps {
 }
 
 function ApplicationLayout({children}: ApplicationLayoutProps) {
+
   return (
     <div>
         <Header />

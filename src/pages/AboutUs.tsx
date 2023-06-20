@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import AwardsAccordion from "../components/AwardsAccordion"
+// import AwardsAccordion from "../components/AwardsAccordion"
 import OurTeamSection from "../components/OurTeamSection"
 import WhyChooseUs from "../components/WhyChooseUs"
 import Banner_1 from "../components/Banner_1"
@@ -28,9 +28,9 @@ function AboutUs() {
             {t("about-us.text-2")}
           </p>
 
-          <div className="mt-9">
+          {/* <div className="mt-9">
             <AwardsAccordion />
-          </div>
+          </div> */}
 
         </div>
 

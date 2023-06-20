@@ -1,9 +1,17 @@
 import { useTranslation } from "react-i18next"
 import Banner_1 from "../components/Banner_1"
 import ProjectDetialsCard from "../components/ProjectDetialsCard"
+import { useEffect } from "react"
 
 function ProjectDetails() {
     const [t] = useTranslation()
+
+    useEffect(
+        () => {
+            document.documentElement.scrollTo(0, 0)
+        },
+        []
+    )
     
     return (
         <div className="w-full min-h-screen">
